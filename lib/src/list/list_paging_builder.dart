@@ -70,21 +70,22 @@ class _ListPagingBuilderState<T> extends State<ListPagingBuilder<T>> {
         child: PagedListView<int, T>(
           builderDelegate: PagedChildBuilderDelegate<T>(
             firstPageErrorIndicatorBuilder:
-                widget.firstPageErrorIndicatorBuilder,
+            widget.firstPageErrorIndicatorBuilder,
             newPageErrorIndicatorBuilder: widget.newPageErrorIndicatorBuilder,
             firstPageProgressIndicatorBuilder:
-                widget.firstPageErrorIndicatorBuilder,
+            widget.firstPageProgressIndicatorBuilder,
             newPageProgressIndicatorBuilder:
-                widget.newPageProgressIndicatorBuilder,
+            widget.newPageProgressIndicatorBuilder,
             noItemsFoundIndicatorBuilder: widget.noItemsFoundIndicatorBuilder,
             noMoreItemsIndicatorBuilder: widget.noMoreItemsIndicatorBuilder,
             animateTransitions: widget.animateTransitions ?? false,
             transitionDuration:
-                widget.transitionDuration ?? const Duration(milliseconds: 250),
+            widget.transitionDuration ?? const Duration(milliseconds: 250),
             itemBuilder: widget.itemBuilder,
           ),
           pagingController: _pagedController,
-        ));
+        )
+    );
   }
 
   @override
