@@ -22,6 +22,7 @@ class FormBuilderFieldDecoration<T> extends FormBuilderField<T> {
 
   final InputDecoration decoration;
 
+
   @override
   FormBuilderFieldDecorationState<FormBuilderFieldDecoration<T>, T>
       createState() =>

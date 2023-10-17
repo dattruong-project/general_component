@@ -10,6 +10,7 @@ enum ControlAffinity { leading, trailing }
 typedef ValueTransformer<T> = dynamic Function(T value);
 
 class FormBuilderField<T> extends FormField<T> {
+
   final String name;
 
   final ValueTransformer<T?>? valueTransformer;
@@ -19,6 +20,7 @@ class FormBuilderField<T> extends FormField<T> {
   final VoidCallback? onReset;
 
   final FocusNode? focusNode;
+
 
   const FormBuilderField({
     super.key,
